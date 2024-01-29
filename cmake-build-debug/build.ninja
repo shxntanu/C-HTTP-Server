@@ -55,17 +55,11 @@ build CMakeFiles/HTTP_Server.dir/main.c.o: C_COMPILER__HTTP_Server_unscanned_Deb
   OBJECT_DIR = CMakeFiles/HTTP_Server.dir
   OBJECT_FILE_DIR = CMakeFiles/HTTP_Server.dir
 
-build CMakeFiles/HTTP_Server.dir/Server.c.o: C_COMPILER__HTTP_Server_unscanned_Debug /Users/shantanu/CLionProjects/HTTP$ Server/Server.c || cmake_object_order_depends_target_HTTP_Server
-  DEP_FILE = CMakeFiles/HTTP_Server.dir/Server.c.o.d
+build CMakeFiles/HTTP_Server.dir/src/Server.c.o: C_COMPILER__HTTP_Server_unscanned_Debug /Users/shantanu/CLionProjects/HTTP$ Server/src/Server.c || cmake_object_order_depends_target_HTTP_Server
+  DEP_FILE = CMakeFiles/HTTP_Server.dir/src/Server.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/HTTP_Server.dir
-  OBJECT_FILE_DIR = CMakeFiles/HTTP_Server.dir
-
-build CMakeFiles/HTTP_Server.dir/test.c.o: C_COMPILER__HTTP_Server_unscanned_Debug /Users/shantanu/CLionProjects/HTTP$ Server/test.c || cmake_object_order_depends_target_HTTP_Server
-  DEP_FILE = CMakeFiles/HTTP_Server.dir/test.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/HTTP_Server.dir
-  OBJECT_FILE_DIR = CMakeFiles/HTTP_Server.dir
+  OBJECT_FILE_DIR = CMakeFiles/HTTP_Server.dir/src
 
 
 # =============================================================================
@@ -75,7 +69,7 @@ build CMakeFiles/HTTP_Server.dir/test.c.o: C_COMPILER__HTTP_Server_unscanned_Deb
 #############################################
 # Link the executable HTTP_Server
 
-build HTTP_Server: C_EXECUTABLE_LINKER__HTTP_Server_Debug CMakeFiles/HTTP_Server.dir/main.c.o CMakeFiles/HTTP_Server.dir/Server.c.o CMakeFiles/HTTP_Server.dir/test.c.o
+build HTTP_Server: C_EXECUTABLE_LINKER__HTTP_Server_Debug CMakeFiles/HTTP_Server.dir/main.c.o CMakeFiles/HTTP_Server.dir/src/Server.c.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/HTTP_Server.dir
   POST_BUILD = :
