@@ -16,14 +16,3 @@ This is a simple HTTP Server written in C. It was written as a fun project to le
 │   ├── server.h
 
 ```
-
-## Building
-
-To build the project, you will need to have CMake installed. Once you have CMake installed, you can run the following commands to build the project:
-
-```
-mkdir build
-cd build
-cmake ..
-make
-```
